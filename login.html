@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Souled Store | Login </title>
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icon Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- Owl crousel link -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="/assets/fevicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <nav
+        class="navbar navbar-expand-lg navbar-expand-sm  navbar-expand-md fixed-top bg-white border-bottom  shadow-sm ">
+        <div class="container">
+            <!-- Left Menu -->
+            <ul class="navbar-nav d-flex align-items-center gap-3 fs-5 fw-bold">
+                <!-- Offcanvas Button -->
+                <li class="nav-item canvas-btn ">
+                    <button class="btn p-0 fs-4 border-0" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"
+                        aria-label="Open categories menu">
+                        <i class="bi bi-list fw-bold fs-4"></i>
+                    </button>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-dark nav-underline" href="#">MEN</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-dark nav-underline" href="#">WOMEN</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-dark nav-underline" href="#">SNEAKER</a>
+                </li>
+            </ul>
+
+            <!-- Logo -->
+            <a class="navbar-brand mx-auto" href="index.html">
+                <img src="/assets/Soul-logo.gif" class="img-fluid" alt="Souled Store" />
+            </a>
+
+            <!-- Right Icons -->
+            <div class="nav-heart d-flex align-items-center gap-3">
+                <!-- Search -->
+                <div class="input-group ">
+                    <input type="text" class="form-control border-0 " placeholder="What are you looking for?" />
+                    <span class="input-group-text bg-transparent border-0">
+                        <i class="bi bi-mic-fill fs-5"></i>
+                    </span>
+                    <span class="input-group-text bg-transparent border-0">
+                        <i class="bi bi-search fs-5"></i>
+                    </span>
+                </div>
+
+                <a href="login.html"><i class="bi bi-person-circle fs-5 text-dark nav-underline"></i></a>
+                <a href="/empty-whislist.html"><i class="bi bi-suit-heart-fill fs-5 text-dark nav-underline"></i></a>
+                <a href="empty-cart.html"><i class="bi bi-cart2 fs-5 text-dark nav-underline"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero-section login-section container-fluid py-4">
+        <div class="container login-container">
+            <p id="text-change" class="text-dark text-center fs-6 fw-semibold pt-4 pb-2 mb-0">
+                Login with The Souled Store
+            </p>
+
+            <ul class="nav nav-pills pt-2 mb-3 d-flex justify-content-center w-100" id="auth-tab" role="tablist">
+
+                <li class="nav-item log-item" role="presentation">
+                    <button  onclick="logBtn()"  id="log-btn" class="login-link nav-link active log-btn" id="auth-login-tab" data-bs-toggle="pill"
+                        data-bs-target="#auth-login" type="button" role="tab" aria-controls="auth-login"
+                        aria-selected="true">
+                        LOGIN
+                    </button>
+                </li>
+
+                <li class="nav-item log-item" role="presentation">
+                    <button onclick="registerBtn()" id="register-btn" class="login-link nav-link log-btn" id="auth-register-tab" data-bs-toggle="pill"
+                        data-bs-target="#auth-register" type="button" role="tab" aria-controls="auth-register"
+                        aria-selected="false">
+                        REGISTER
+                    </button>
+                </li>
+            </ul>
+
+
+            <div class="tab-content log-content py-3 px-4" id="auth-tabContent">
+
+                <!-- LOGIN TAB -->
+                <div class="tab-pane fade show active" id="auth-login" role="tabpanel" aria-labelledby="auth-login-tab"
+                    tabindex="0">
+
+                    <div class="social d-flex gap-2">
+                        <div class="input-group d-flex align-items-center mb-3 p-0">
+                            <span class="input-group-text border-end">
+                                <img src="/assets/log-facebook-icon.png" class="img-fluid social-log" alt="">
+                            </span>
+                            <p class="text-center mb-0 p-0 px-3 fw-bold py-2 border-start google-text">
+                                Facebook
+                            </p>
+                        </div>
+
+                        <div class="input-group d-flex align-items-center mb-3 p-0">
+                            <span class="input-group-text border-end">
+                                <img src="/assets/log-google-icon.png" class="img-fluid social-log" alt="">
+                            </span>
+                            <p class="text-center mb-0 p-0 px-3 fw-bold py-2 border-start google-text">
+                                Google
+                            </p>
+                        </div>
+                    </div>
+
+                    <h4 class="text-center small fw-bold text-muted">- OR -</h4>
+
+                    <div class="otp-form pt-4">
+                        <input type="text" class="form-control" placeholder="Enter Phone Number" aria-label="Username"
+                            aria-describedby="addon-wrapping">
+
+                        <a href="#" class="btn btn-outline-danger proceed-btn w-100 mt-3">
+                            Proceed
+                        </a>
+
+                        <p class="text-center small py-3 mb-0">
+                            New User ?
+                            <a href="#" class="text-danger">Create Account</a>
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- REGISTER TAB -->
+                <div class="tab-pane fade" id="auth-register" role="tabpanel" aria-labelledby="auth-register-tab"
+                    tabindex="0">
+
+                    <div class="social d-flex gap-2 flex-column flex-md-row">
+                        <div class="input-group d-flex align-items-center mb-3 p-0">
+                            <span class="input-group-text border-end">
+                                <img src="/assets/log-facebook-icon.png" class="img-fluid social-log" alt="">
+                            </span>
+                            <p class="text-center mb-0 p-0 px-3 fw-bold py-2 border-start google-text">
+                                Facebook
+                            </p>
+                        </div>
+
+                        <div class="input-group d-flex align-items-center mb-3 p-0">
+                            <span class="input-group-text border-end">
+                                <img src="/assets/log-google-icon.png" class="img-fluid social-log" alt="">
+                            </span>
+                            <p class="text-center mb-0 p-0 px-3 fw-bold py-2 border-start google-text">
+                                Google
+                            </p>
+                        </div>
+                    </div>
+                    <h4 class="text-center small fw-bold text-muted">- OR -</h4>
+                   <form>
+
+    <!-- First & Last Name -->
+    <div class="row g-3 mb-3">
+        <div class="col-12 col-md-6">
+            <input type="text" class="form-control" placeholder="First Name" required>
+        </div>
+        <div class="col-12 col-md-6">
+            <input type="text" class="form-control" placeholder="Last Name" required>
+        </div>
+    </div>
+
+    <!-- Email -->
+    <div class="mb-3">
+        <input type="email" class="form-control" placeholder="Email Id*" required>
+    </div>
+
+    <!-- Password -->
+    <div class="mb-3">
+        <input type="password" class="form-control" placeholder="Choose New Password*" required>
+    </div>
+
+    <!-- Confirm Password -->
+    <div class="mb-3">
+        <input type="password" class="form-control" placeholder="Confirm Password*" required>
+    </div>
+
+    <!-- Birthdate -->
+    <div class="mb-3">
+        <input type="date" class="form-control">
+        <div class="form-text">
+            (Avail 10% Birthday discount as a member).
+        </div>
+    </div>
+
+    <!-- Mobile Number -->
+    <div class="input-group mb-3">
+        <span class="input-group-text">+91</span>
+        <input type="tel" class="form-control border-0" placeholder="Mobile Number (For Order Status Update)">
+    </div>
+
+</form>
+                    <div class=" d-flex align-items-center gap-3">
+                        <span class="p-0 m-0">Gender</span>
+                           <div class="form-check form-check-inline mb-0">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                            value="option1">
+                        <label class="form-check-label" for="inlineRadio1">Male</label>
+                    </div>
+                    <div class="form-check form-check-inline mb-0">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                            value="option2">
+                        <label class="form-check-label" for="inlineRadio2">Female</label>
+                    </div>
+                    <div class="form-check form-check-inline mb-0">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                            value="option3">
+                        <label class="form-check-label" for="inlineRadio3">other</label>
+                    </div>
+                    </div>
+                 <div class="btn btn-outline-success reg-btn w-100 mt-3">Register</div>
+                        <p class="text-center small py-3 mb-0 fw-semibold">
+                           Already Customer?
+                            <a href="/login.html" class="text-danger">Login</a>
+                        </p>
+                 
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+    <footer class=" w-100 ">
+        <div class="footer-heading  ">
+            <h1 class="text-center fw-semibold text-light py-3 fs-2   ">HOMEGROWN INDIAN BRAND</h1>
+            <h2 class="text-center fs-1 py-3">Over <span class="fw-bold"> 6 Million</span> Happy Customers</h2>
+        </div>
+        <div class="footer-content w-100 ">
+            <div class=" foot row w-100 ">
+                <div class="col-md-3">
+                    <p class="mb-2 fw-bold ">NEED HELP</p>
+                    <ul class=" content-list list-unstyled">
+                        <li class=" py-1 small">Contact Us</li>
+                        <li class=" py-1 small">Track Order</li>
+                        <li class=" py-1 small">Returns & Refunds</li>
+                        <li class=" py-1 small">FAQs</li>
+                        <li class=" py-1 small">My Account</li>
+                        <li class=" py-1 d-flex align-items-center text-center gap-1">
+                            <span><i class="bi bi-currency-rupee"></i></span>
+                            <span class="fw-normal small mb-0"> COD Available</span>
+                        </li>
+                        <li class=" py-2 d-flex align-items-center text-center gap-1">
+                            <span><i class="bi bi-recycle"></i></span>
+                            <span class="fw-normal small"> 30 Days Easy Returns & Exchanges</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <p class="mb-2 fw-bold ">COMPANY</p>
+                    <ul class="content-list list-unstyled">
+                        <li class=" py-1 small">About Us</li>
+                        <li class=" py-1 small">Investor Relation</li>
+                        <li class=" py-1 small">Returns & Refunds</li>
+                        <li class=" py-1 small">Careers</li>
+                        <li class=" py-1 small">Gift Vouchers</li>
+                        <li class=" py-1 small">Community Initiatives</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <p class="mb-2 fw-bold ">MORE INFO</p>
+                    <ul class=" content-list list-unstyled">
+                        <li class=" py-1 small">T&C</li>
+                        <li class=" py-1 small">Privacy Policy</li>
+                        <li class=" py-1 small">Sitemap</li>
+                        <li class=" py-1 small">FAQs</li>
+                        <li class=" py-1 small">Get Notified</li>
+                        <li class=" py-1 small">Blogs</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <p class="mb-2 fw-bold ">STORE NEAR ME</p>
+                    <ul class=" content-list list-unstyled">
+                        <li class=" py-1 small">Mumbai</li>
+                        <li class=" py-1 small">Pune</li>
+                        <li class=" py-1 small">Bangalore</li>
+                        <li class=" py-1 small">Hubbali</li>
+                        <li class=" py-1 small">View More</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 text-center">
+
+                    <p class="m-0 d-flex align-items-center justify-content-center gap-1">
+                        <i class="bi bi-phone small lh-1"></i>
+                        <span class="text-dark text-uppercase">
+                            Experience The Souled Store App
+                        </span>
+                    </p>
+
+                    <div class="foot-downloads d-flex justify-content-center gap-3 mt-2">
+                        <img src="/assets/foot-download1.png" class="foot-app img-fluid" alt="">
+                        <img src="/assets/foot-download3.png" class="foot-app img-fluid" alt="">
+                    </div>
+
+                </div>
+
+                <div class="follow-links row">
+                    <div class="col-md-12">
+                        <div class="content d-flex gap-2 align-items-center justify-content-end py-2">
+                            <p class="text-dark mb-0">Follow Us :</p>
+
+                            <i class="bi bi-facebook social-icon"></i>
+                            <i class="bi bi-instagram social-icon"></i>
+                            <i class="bi bi-snapchat social-icon"></i>
+                            <i class="bi bi-twitter-x social-icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="row py-2">
+                    <div class=" card col-md-12 bg-transparent py-3 d-flex rounded-0">
+                        <div class=" d-flex justify-content-between">
+                            <span class="text-uppercase fs-5 text-danger fw-bold">who we are</span>
+                            <i class="bi bi-plus text-danger fs-5"></i>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row ">
+                    <div class="col-md-6">
+                        <div class="d-flex align-items-center text-center gap-2">
+                            <span class="small">100% Secure Payment:
+                                <img src="/assets/foot-payemnt.png" class="img-fluid pay-img" alt="">
+                            </span>
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-6 d-flex align-items-center ">
+                        <div class="d-flex align-items-center text-center gap-2">
+                            <span class="small border-start border-1 border-dark ps-2">Shipping Partners</span>
+                            <img src="/assets/icon4 (1).png" class="img-fluid icon" alt="">
+                            <img src="/assets/icon4 (2).png" class="img-fluid icon" alt="">
+                            <img src="/assets/icon4 (3).png" class="img-fluid icon" alt="">
+                            <img src="/assets/icon4 (4).png" class="img-fluid icon" alt="">
+
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 d-flex justify-content-center align-items-center">
+                            <p class="d-flex align-items-center gap-1 m-0">
+                                <i class="bi bi-c-circle d-flex align-items-center text-dark small"></i>
+                                <span class="d-flex align-items-center text-dark small">
+                                    The Souled Store 2026-27
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+    </footer>
+
+
+
+
+
+    <!-- ================= OFFCANVAS ================= -->
+    <div class="offcanvas offcanvas-start left-canvas" data-bs-scroll="true" data-bs-backdrop="true" tabindex="0"
+        id="offcanvasScrolling">
+        <div class="offcanvas-header d-flex align-items-center justify-content-between">
+            <img src="/assets/Soul-logo.gif" class="logo-img" alt="">
+            <a href="#" class=" border-btn">Login/sign-up</a>
+        </div>
+        <div class="offcanvas-body p-0">
+
+            <a class="off-head py-0 d-block d-flex align-items-center justify-content-center gap-2" href="#">Earn 10%
+                Cashback on Every App Order
+                <span class="d-flex justify-content-center align-items-center gap-2">
+                    <i class="bi bi-apple"></i> <i class="bi bi-google-play"></i>
+                </span>
+            </a>
+
+            <!-- Off canvas Nav-Tabs  -->
+
+            <ul class="nav nav-pills shadow-sm py-3 mb-3 justify-content-around" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-Men-tab" data-bs-toggle="pill" data-bs-target="#pills-Men"
+                        type="button" role="tab" aria-controls="pills-Men" aria-selected="true">Men</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-women-tab" data-bs-toggle="pill" data-bs-target="#pills-women"
+                        type="button" role="tab" aria-controls="pills-women" aria-selected="false">women</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-Sneaker-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-Sneaker" type="button" role="tab" aria-controls="pills-Sneaker"
+                        aria-selected="false">Sneaker</button>
+                </li>
+            </ul>
+
+
+            <!-- Off Canvas Nav Tabs Content -->
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-Men" role="tabpanel" aria-labelledby="pills-Men-tab"
+                    tabindex="0">
+                    <!-- owl carousel start men -->
+                    <div class="owl-carousel owl-theme px-3">
+                        <div class="item">
+                            <img src="/assets/men-icon-1.png" class="img-fluid rounded" alt="">
+                            <p class="text-muted text-center">New Arrivals</p>
+                        </div>
+                        <div class="item">
+                            <img src="/assets/men-icon-2.png" class="img-fluid rounded" alt="">
+                            <p class="text-muted text-center fs-6">Hot Merch</p>
+                        </div>
+                        <div class="item">
+                            <img src="/assets/men-icon-3.png" class="img-fluid rounded" alt="">
+                            <p class="text-muted text-center fs-6">Anime</p>
+                        </div>
+                        <div class="item">
+                            <img src="/assets/men-icon-4.png" class="img-fluid rounded" alt="">
+                            <p class="text-muted text-center fs-6">Harry Porter</p>
+                        </div>
+                        <div class="item">
+                            <img src="/assets/men-icon-5.png" class="img-fluid rounded" alt="">
+                            <p class="text-muted text-center fs-6">Marvel</p>
+                        </div>
+                        <div class="item">
+                            <img src="/assets/men-icon-6.png" class="img-fluid rounded" alt="">
+                            <p class="text-muted text-center fs-6">Culture code</p>
+                        </div>
+                        <div class="item">
+                            <img src="/assets/men-icon-7.png" class="img-fluid rounded" alt="">
+                            <p class="text-muted text-center fs-6">Cult Callsics</p>
+                        </div>
+                        <div class="item">
+                            <img src="/assets/men-icon-8.png" class="img-fluid rounded" alt="">
+                            <p class="text-muted text-center fs-6">Kids-wear</p>
+                        </div>
+                    </div>
+                    <!-- owl crosel end -->
+
+                    <!-- ================= MAIN ACCORDION START ================= -->
+                    <div class="accordion" id="mainAccordion">
+
+                        <!-- ===== SHOP ALL ACCORDION START ===== -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#shopAllCollapse" aria-expanded="true"
+                                    aria-controls="shopAllCollapse">
+                                    Shop All
+                                </button>
+                            </h2>
+
+                            <div id="shopAllCollapse" class="accordion-collapse collapse show">
+
+                                <div class="accordion-body p-0">
+
+                                    <!-- ===== CATEGORY ACCORDION START ===== -->
+                                    <div class="accordion cate-accordion p-0 border-0" id="categoryAccordion">
+
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#categoryCollapse" aria-expanded="true"
+                                                    aria-controls="categoryCollapse">
+                                                    Category
+                                                </button>
+                                            </h2>
+                                            <div id="categoryCollapse" class="accordion-collapse collapse show p-0">
+
+                                                <div class="accordion-body">
+                                                    <div class="row row-cols-2 row-cols-sm-3 row-cols-md-5 ">
+
+                                                        <div class="col text-center">
+                                                            <img src="/assets/shop nested icon 1.png"
+                                                                class="img-fluid rounded" alt="">
+                                                            <h5 class="fs-6 mt-2">Shirts</h5>
+                                                        </div>
+
+                                                        <div class="col text-center">
+                                                            <img src="/assets/shop nested icon 1.png"
+                                                                class="img-fluid rounded" alt="">
+                                                            <h5 class="fs-6 mt-2">T-Shirts</h5>
+                                                        </div>
+
+                                                        <div class="col text-center">
+                                                            <img src="/assets/shop nested icon 1.png"
+                                                                class="img-fluid rounded" alt="">
+                                                            <h5 class="fs-6 mt-2">Hoodies</h5>
+                                                        </div>
+
+                                                        <div class="col text-center">
+                                                            <img src="/assets/shop nested icon 1.png"
+                                                                class="img-fluid rounded" alt="">
+                                                            <h5 class="fs-6 mt-2">Jackets</h5>
+                                                        </div>
+
+                                                        <div class="col text-center">
+                                                            <img src="/assets/shop nested icon 1.png"
+                                                                class="img-fluid rounded" alt="">
+                                                            <h5 class="fs-6 mt-2">Sweatshirts</h5>
+                                                        </div>
+                                                        <div class="col text-center">
+                                                            <img src="/assets/shop nested icon 1.png"
+                                                                class="img-fluid rounded" alt="">
+                                                            <h5 class="fs-6 mt-2">Sweatshirts</h5>
+                                                        </div>
+                                                        <div class="col text-center">
+                                                            <img src="/assets/shop nested icon 1.png"
+                                                                class="img-fluid rounded" alt="">
+                                                            <h5 class="fs-6 mt-2">Sweatshirts</h5>
+                                                        </div>
+                                                        <div class="col text-center">
+                                                            <img src="/assets/shop nested icon 1.png"
+                                                                class="img-fluid rounded" alt="">
+                                                            <h5 class="fs-6 mt-2">Sweatshirts</h5>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- ===== CATEGORY ACCORDION END ===== -->
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ===== SHOP ALL ACCORDION END ===== -->
+
+
+                        <!-- ===== TOPWEAR ACCORDION START ===== -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#topwearCollapse" aria-expanded="false"
+                                    aria-controls="topwearCollapse">
+                                    Topwear
+                                </button>
+                            </h2>
+
+                            <div id="topwearCollapse" class="accordion-collapse collapse">
+
+                                <div class="accordion-body p-0">
+
+                                    <div class="accordion accordion-flush" id="topwearInnerAccordion">
+
+                                        <!-- Shop by Category -->
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#topwearCategoryCollapse"
+                                                    aria-expanded="false" aria-controls="topwearCategoryCollapse">
+                                                    Shop by Category
+                                                </button>
+                                            </h2>
+
+                                            <div id="topwearCategoryCollapse" class="accordion-collapse collapse"
+                                                data-bs-parent="#topwearInnerAccordion">
+
+                                                <div class="accordion-body">
+                                                    <div class="row">
+                                                        <div class="col-md-2">
+                                                            <img src="/assets/men-icon-2.png" class="img-fluid rounded"
+                                                                alt="">
+                                                            <p class="text-center text-muted">
+                                                                T-shirts
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Shop by Fit -->
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#topwearFitCollapse"
+                                                    aria-expanded="false" aria-controls="topwearFitCollapse">
+                                                    Shop by Fit
+                                                </button>
+                                            </h2>
+
+                                            <div id="topwearFitCollapse" class="accordion-collapse collapse"
+                                                data-bs-parent="#topwearInnerAccordion">
+
+                                                <div class="accordion-body">
+                                                    <div class="row">
+                                                        <div class="col-md-3">
+                                                            <img src="/assets/men-icon-4.png" class="img-fluid rounded"
+                                                                alt="">
+                                                            <p class="text-center text-muted">
+                                                                Oversized T-shirts
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ===== TOPWEAR ACCORDION END ===== -->
+
+
+                        <!-- ===== BOTTOMWEAR ACCORDION START ===== -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#bottomwearCollapse" aria-expanded="false"
+                                    aria-controls="bottomwearCollapse">
+                                    Bottomwear
+                                </button>
+                            </h2>
+
+                            <div id="bottomwearCollapse" class="accordion-collapse collapse">
+
+                                <div class="accordion-body p-0">
+
+                                    <div class="accordion" id="bottomwearInnerAccordion">
+
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#bottomwearCategoryCollapse" aria-expanded="true"
+                                                    aria-controls="bottomwearCategoryCollapse">
+                                                    Shop by Category
+                                                </button>
+                                            </h2>
+
+                                            <div id="bottomwearCategoryCollapse"
+                                                class="accordion-collapse collapse show"
+                                                data-bs-parent="#bottomwearInnerAccordion">
+
+                                                <div class="accordion-body">
+                                                    <div class="row">
+                                                        <div class="col-md-3">
+                                                            <img src="/assets/men-icon-7.png" class="img-fluid rounded"
+                                                                alt="">
+                                                            <p class="text-center">
+                                                                All Bottomwear
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ===== BOTTOMWEAR ACCORDION END ===== -->
+
+                        <!-- ===== ALL ACCESSORIES ACCORDION START ===== --> <!--  -->
+                        <div class="accordion" id="accssesorie-acordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        All Accessories
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    data-bs-parent="#accssesorie-acordion">
+                                    <div class="accordion-body">
+                                        <!-- all accssesories owl carosel start -->
+                                        <div class="owl-carousel owl-theme All-accessories-carousel px-2">
+                                            <div class="item">
+                                                <img src="/assets/men-icon-2.png" class="img-fluid rounded" alt="">
+                                                <p class="text-center">Hello</p>
+                                            </div>
+                                            <div class="item">
+                                                <img src="/assets/men-icon-2.png" class="img-fluid rounded" alt="">
+                                                <p class="text-center">Hello</p>
+                                            </div>
+                                            <div class="item">
+                                                <img src="/assets/men-icon-2.png" class="img-fluid rounded" alt="">
+                                                <p class="text-center">Hello</p>
+                                            </div>
+                                            <div class="item">
+                                                <img src="/assets/men-icon-2.png" class="img-fluid rounded" alt="">
+                                                <p class="text-center">Hello</p>
+                                            </div>
+                                            <div class="item">
+                                                <img src="/assets/men-icon-2.png" class="img-fluid rounded" alt="">
+                                                <p class="text-center">Hello</p>
+                                            </div>
+                                            <div class="item">
+                                                <img src="/assets/men-icon-2.png" class="img-fluid rounded" alt="">
+                                                <p class="text-center">Hello</p>
+                                            </div>
+                                            <div class="item">
+                                                <img src="/assets/men-icon-2.png" class="img-fluid rounded" alt="">
+                                                <p class="text-center">Hello</p>
+                                            </div>
+                                            <div class="item">
+                                                <img src="/assets/men-icon-2.png" class="img-fluid rounded" alt="">
+                                                <p class="text-center">Hello</p>
+                                            </div>
+                                        </div>
+                                        <!-- all accssesories owl carosel End -->
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- ================= MAIN ACCORDION END ================= -->
+                        <div class="accordion accordion-flush " id="shopAccordionFlush">
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#officialMerchCollapse" aria-expanded="false"
+                                        aria-controls="officialMerchCollapse">
+                                        Official Merch
+                                    </button>
+                                </h2>
+                                <div id="officialMerchCollapse" class="accordion-collapse collapse"
+                                    data-bs-parent="#shopAccordionFlush">
+                                    <div class="accordion-body p-0">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed fw-normal" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#DCcollapse"
+                                                    aria-expanded="false" aria-controls="DCcollapse">
+                                                    Marvel
+                                                </button>
+                                            </h2>
+
+                                            <div id="DCcollapse" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordionFlushExample">
+
+                                                <div class="accordion-body">
+                                                    marvels
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed fw-normal" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#DCcollapse"
+                                                    aria-expanded="false" aria-controls="DCcollapse">
+                                                    DC
+                                                </button>
+                                            </h2>
+
+                                            <div id="DCcollapse" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordionFlushExample">
+
+                                                <div class="accordion-body">
+                                                    marvels
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed fw-normal" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#Animecollapse">
+                                                    Anime
+                                                </button>
+                                            </h2>
+
+                                            <div id="#Animecollapse" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordionFlushExample">
+
+                                                <div class="accordion-body">
+                                                    marvels
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item sneakerscollapse">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#sneakersCollapse" aria-expanded="false"
+                                        aria-controls="sneakersCollapse">
+                                        Sneakers <sup class="fs-6 text-danger">New Drops</sup>
+                                    </button>
+                                </h2>
+                                <div id="sneakersCollapse" class="accordion-collapse collapse"
+                                    data-bs-parent="#shopAccordionFlush">
+                                    <div class="accordion-body">
+                                        Placeholder content for this accordion.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#juniorsCollapse" aria-expanded="false"
+                                        aria-controls="juniorsCollapse">
+                                        Juniors
+                                    </button>
+                                </h2>
+                                <div id="juniorsCollapse" class="accordion-collapse collapse"
+                                    data-bs-parent="#shopAccordionFlush">
+                                    <div class="accordion-body">
+                                        <div class="row">
+                                            <label for="#">Shop Now</label>
+                                            <div class="col-md-3"><img src="/assets/Soul-logo.gif" alt="">
+                                                <p class="text-center"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="tab-pane fade" id="pills-women" role="tabpanel" aria-labelledby="pills-women-tab"
+                    tabindex="0">
+                    <div class="owl-carousel owl-theme crousel-cards px-3">
+                        <div class="item"> <img src="assets/women-icon-1.png" alt="">
+                            <h4 class="text-dark fw-bold">Harry-porter</h4>
+                        </div>
+                        <div class="item"> <img src="assets/women-icon-2.png" alt="">
+                            <h4 class="text-dark fw-bold">Kawaii</h4>
+                        </div>
+                        <div class="item"> <img src="assets/women-icon-3.png" alt="">
+                            <h4 class="text-dark fw-bold">Oversized Tees</h4>
+                        </div>
+                        <div class="item"> <img src="assets/women-icon-4.png" alt="">
+                            <h4 class="text-dark fw-bold">New Arrivals</h4>
+                        </div>
+                        <div class="item"> <img src="assets/women-icon-5.png" alt="">
+                            <h4 class="text-dark fw-bold">Cotton Linen</h4>
+                        </div>
+                        <div class="item"> <img src="assets/women-icon-6.png" alt="">
+                            <h4 class="text-dark fw-bold">Souled</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-Sneaker" role="tabpanel" aria-labelledby="pills-Sneaker-tab"
+                    tabindex="0">
+                    <div class="owl-carousel owl-theme crousel-cards px-3">
+                        <div class="item"> <img src="assets/sneaker-icon-1.png" alt="">
+                            <h4 class="text-dark fw-bold">Kanso V2</h4>
+                        </div>
+                        <div class="item"> <img src="assets/sneaker-icon-2.png" alt="">
+                            <h4 class="text-dark fw-bold">UBZ Ascend</h4>
+                        </div>
+                        <div class="item"> <img src="assets/sneaker-icon-3.png" alt="">
+                            <h4 class="text-dark fw-bold">Raptors</h4>
+                        </div>
+                        <div class="item"> <img src="assets/sneaker-icon-4.png" alt="">
+                            <h4 class="text-dark fw-bold">New kakashi</h4>
+                        </div>
+                        <div class="item"> <img src="assets/sneaker-icon-5.png" alt="">
+                            <h4 class="text-dark fw-bold">UBZ NXT</h4>
+                        </div>
+                        <div class="item"> <img src="assets/sneaker-icon-6.png" alt="">
+                            <h4 class="text-dark fw-bold">Football Shoe</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- bootstrap js link  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Owl crousel Link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="main.js"></script>
+
+    <!-- Owl crousel Men JS/CSS -->
+    <script>   $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,
+            loop: false,
+            dots: true,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })</script>
+</body>
