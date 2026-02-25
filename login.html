@@ -16,16 +16,18 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
     <!-- Custom Css -->
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="shortcut icon" href="/assets/fevicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./assets/fevicon.png" type="image/x-icon">
 </head>
 
 <body>
+
+    <!-- NavBar Start -->
     <nav
         class="navbar navbar-expand-lg navbar-expand-sm  navbar-expand-md fixed-top bg-white border-bottom  shadow-sm ">
         <div class="container">
             <!-- Left Menu -->
-            <ul class="navbar-nav d-flex align-items-center gap-3 fs-5 fw-bold">
+            <ul class="navbar-nav d-flex align-items-center gap-3 fs-5 fw-bold ">
                 <!-- Offcanvas Button -->
                 <li class="nav-item canvas-btn ">
                     <button class="btn p-0 fs-4 border-0" data-bs-toggle="offcanvas"
@@ -35,11 +37,11 @@
                     </button>
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link text-dark nav-underline" href="#">MEN</a>
+                <li class="nav-item ">
+                    <a class="nav-link text-dark nav-underline  " href="#">MEN</a>
                 </li>
 
-                <li class="nav-item">
+                <li class="nav-item ">
                     <a class="nav-link text-dark nav-underline" href="#">WOMEN</a>
                 </li>
 
@@ -50,7 +52,7 @@
 
             <!-- Logo -->
             <a class="navbar-brand mx-auto" href="index.html">
-                <img src="/assets/Soul-logo.gif" class="img-fluid" alt="Souled Store" />
+                <img src="./assets/Soul-logo.gif" class="img-fluid" alt="Souled Store" />
             </a>
 
             <!-- Right Icons -->
@@ -66,12 +68,13 @@
                     </span>
                 </div>
 
-                <a href="login.html"><i class="bi bi-person-circle fs-5 text-dark nav-underline"></i></a>
-                <a href="/empty-whislist.html"><i class="bi bi-suit-heart-fill fs-5 text-dark nav-underline"></i></a>
-                <a href="empty-cart.html"><i class="bi bi-cart2 fs-5 text-dark nav-underline"></i></a>
+                <a href="./login.html"><i class="bi bi-person-circle fs-5 text-dark nav-underline"></i></a>
+                <a href="./empty-whislist.html"><i class="bi bi-suit-heart-fill fs-5 text-dark nav-underline"></i></a>
+                <a href="./empty-cart.html"><i class="bi bi-cart2 fs-5 text-dark nav-underline"></i></a>
             </div>
         </div>
     </nav>
+    <!-- NavBar End -->
 
     <div class="hero-section login-section container-fluid py-4">
         <div class="container login-container">
@@ -82,17 +85,17 @@
             <ul class="nav nav-pills pt-2 mb-3 d-flex justify-content-center w-100" id="auth-tab" role="tablist">
 
                 <li class="nav-item log-item" role="presentation">
-                    <button  onclick="logBtn()"  id="log-btn" class="login-link nav-link active log-btn" id="auth-login-tab" data-bs-toggle="pill"
-                        data-bs-target="#auth-login" type="button" role="tab" aria-controls="auth-login"
-                        aria-selected="true">
+                    <button onclick="logBtn()" id="log-btn" class="login-link nav-link active log-btn"
+                        id="auth-login-tab" data-bs-toggle="pill" data-bs-target="#auth-login" type="button" role="tab"
+                        aria-controls="auth-login" aria-selected="true">
                         LOGIN
                     </button>
                 </li>
 
                 <li class="nav-item log-item" role="presentation">
-                    <button onclick="registerBtn()" id="register-btn" class="login-link nav-link log-btn" id="auth-register-tab" data-bs-toggle="pill"
-                        data-bs-target="#auth-register" type="button" role="tab" aria-controls="auth-register"
-                        aria-selected="false">
+                    <button onclick="registerBtn()" id="register-btn" class="login-link nav-link log-btn"
+                        id="auth-register-tab" data-bs-toggle="pill" data-bs-target="#auth-register" type="button"
+                        role="tab" aria-controls="auth-register" aria-selected="false">
                         REGISTER
                     </button>
                 </li>
@@ -108,7 +111,7 @@
                     <div class="social d-flex gap-2">
                         <div class="input-group d-flex align-items-center mb-3 p-0">
                             <span class="input-group-text border-end">
-                                <img src="/assets/log-facebook-icon.png" class="img-fluid social-log" alt="">
+                                <img src="./assets/log-facebook-icon.png" class="img-fluid social-log" alt="">
                             </span>
                             <p class="text-center mb-0 p-0 px-3 fw-bold py-2 border-start google-text">
                                 Facebook
@@ -117,7 +120,7 @@
 
                         <div class="input-group d-flex align-items-center mb-3 p-0">
                             <span class="input-group-text border-end">
-                                <img src="/assets/log-google-icon.png" class="img-fluid social-log" alt="">
+                                <img src="./assets/log-google-icon.png" class="img-fluid social-log" alt="">
                             </span>
                             <p class="text-center mb-0 p-0 px-3 fw-bold py-2 border-start google-text">
                                 Google
@@ -151,7 +154,7 @@
                     <div class="social d-flex gap-2 flex-column flex-md-row">
                         <div class="input-group d-flex align-items-center mb-3 p-0">
                             <span class="input-group-text border-end">
-                                <img src="/assets/log-facebook-icon.png" class="img-fluid social-log" alt="">
+                                <img src="./assets/log-facebook-icon.png" class="img-fluid social-log" alt="">
                             </span>
                             <p class="text-center mb-0 p-0 px-3 fw-bold py-2 border-start google-text">
                                 Facebook
@@ -160,7 +163,7 @@
 
                         <div class="input-group d-flex align-items-center mb-3 p-0">
                             <span class="input-group-text border-end">
-                                <img src="/assets/log-google-icon.png" class="img-fluid social-log" alt="">
+                                <img src="./assets/log-google-icon.png" class="img-fluid social-log" alt="">
                             </span>
                             <p class="text-center mb-0 p-0 px-3 fw-bold py-2 border-start google-text">
                                 Google
@@ -168,72 +171,73 @@
                         </div>
                     </div>
                     <h4 class="text-center small fw-bold text-muted">- OR -</h4>
-                   <form>
+                    <form>
 
-    <!-- First & Last Name -->
-    <div class="row g-3 mb-3">
-        <div class="col-12 col-md-6">
-            <input type="text" class="form-control" placeholder="First Name" required>
-        </div>
-        <div class="col-12 col-md-6">
-            <input type="text" class="form-control" placeholder="Last Name" required>
-        </div>
-    </div>
+                        <!-- First & Last Name -->
+                        <div class="row g-3 mb-3">
+                            <div class="col-12 col-md-6">
+                                <input type="text" class="form-control" placeholder="First Name" required>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <input type="text" class="form-control" placeholder="Last Name" required>
+                            </div>
+                        </div>
 
-    <!-- Email -->
-    <div class="mb-3">
-        <input type="email" class="form-control" placeholder="Email Id*" required>
-    </div>
+                        <!-- Email -->
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email Id*" required>
+                        </div>
 
-    <!-- Password -->
-    <div class="mb-3">
-        <input type="password" class="form-control" placeholder="Choose New Password*" required>
-    </div>
+                        <!-- Password -->
+                        <div class="mb-3">
+                            <input type="password" class="form-control" placeholder="Choose New Password*" required>
+                        </div>
 
-    <!-- Confirm Password -->
-    <div class="mb-3">
-        <input type="password" class="form-control" placeholder="Confirm Password*" required>
-    </div>
+                        <!-- Confirm Password -->
+                        <div class="mb-3">
+                            <input type="password" class="form-control" placeholder="Confirm Password*" required>
+                        </div>
 
-    <!-- Birthdate -->
-    <div class="mb-3">
-        <input type="date" class="form-control">
-        <div class="form-text">
-            (Avail 10% Birthday discount as a member).
-        </div>
-    </div>
+                        <!-- Birthdate -->
+                        <div class="mb-3">
+                            <input type="date" class="form-control">
+                            <div class="form-text">
+                                (Avail 10% Birthday discount as a member).
+                            </div>
+                        </div>
 
-    <!-- Mobile Number -->
-    <div class="input-group mb-3">
-        <span class="input-group-text">+91</span>
-        <input type="tel" class="form-control border-0" placeholder="Mobile Number (For Order Status Update)">
-    </div>
+                        <!-- Mobile Number -->
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">+91</span>
+                            <input type="tel" class="form-control border-0"
+                                placeholder="Mobile Number (For Order Status Update)">
+                        </div>
 
-</form>
+                    </form>
                     <div class=" d-flex align-items-center gap-3">
                         <span class="p-0 m-0">Gender</span>
-                           <div class="form-check form-check-inline mb-0">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                            value="option1">
-                        <label class="form-check-label" for="inlineRadio1">Male</label>
+                        <div class="form-check form-check-inline mb-0">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                value="option1">
+                            <label class="form-check-label" for="inlineRadio1">Male</label>
+                        </div>
+                        <div class="form-check form-check-inline mb-0">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                value="option2">
+                            <label class="form-check-label" for="inlineRadio2">Female</label>
+                        </div>
+                        <div class="form-check form-check-inline mb-0">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                value="option3">
+                            <label class="form-check-label" for="inlineRadio3">other</label>
+                        </div>
                     </div>
-                    <div class="form-check form-check-inline mb-0">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                            value="option2">
-                        <label class="form-check-label" for="inlineRadio2">Female</label>
-                    </div>
-                    <div class="form-check form-check-inline mb-0">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                            value="option3">
-                        <label class="form-check-label" for="inlineRadio3">other</label>
-                    </div>
-                    </div>
-                 <div class="btn btn-outline-success reg-btn w-100 mt-3">Register</div>
-                        <p class="text-center small py-3 mb-0 fw-semibold">
-                           Already Customer?
-                            <a href="/login.html" class="text-danger">Login</a>
-                        </p>
-                 
+                    <div class="btn btn-outline-success reg-btn w-100 mt-3">Register</div>
+                    <p class="text-center small py-3 mb-0 fw-semibold">
+                        Already Customer?
+                        <a href="./login.html" class="text-danger">Login</a>
+                    </p>
+
                 </div>
 
             </div>
@@ -242,7 +246,8 @@
     </div>
 
     </div>
-    <footer class=" w-100 ">
+    <!-- Footer Start -->
+    <footer class=" w-100">
         <div class="footer-heading  ">
             <h1 class="text-center fw-semibold text-light py-3 fs-2   ">HOMEGROWN INDIAN BRAND</h1>
             <h2 class="text-center fs-1 py-3">Over <span class="fw-bold"> 6 Million</span> Happy Customers</h2>
@@ -313,8 +318,8 @@
                     </p>
 
                     <div class="foot-downloads d-flex justify-content-center gap-3 mt-2">
-                        <img src="/assets/foot-download1.png" class="foot-app img-fluid" alt="">
-                        <img src="/assets/foot-download3.png" class="foot-app img-fluid" alt="">
+                        <img src="./assets/foot-download1.png" class="foot-app img-fluid" alt="">
+                        <img src="./assets/foot-download3.png" class="foot-app img-fluid" alt="">
                     </div>
 
                 </div>
@@ -345,7 +350,7 @@
                     <div class="col-md-6">
                         <div class="d-flex align-items-center text-center gap-2">
                             <span class="small">100% Secure Payment:
-                                <img src="/assets/foot-payemnt.png" class="img-fluid pay-img" alt="">
+                                <img src="./assets/foot-payemnt.png" class="img-fluid pay-img" alt="">
                             </span>
                         </div>
 
@@ -354,10 +359,10 @@
                     <div class="col-md-6 d-flex align-items-center ">
                         <div class="d-flex align-items-center text-center gap-2">
                             <span class="small border-start border-1 border-dark ps-2">Shipping Partners</span>
-                            <img src="/assets/icon4 (1).png" class="img-fluid icon" alt="">
-                            <img src="/assets/icon4 (2).png" class="img-fluid icon" alt="">
-                            <img src="/assets/icon4 (3).png" class="img-fluid icon" alt="">
-                            <img src="/assets/icon4 (4).png" class="img-fluid icon" alt="">
+                            <img src="./assets/icon4 (1).png" class="img-fluid icon" alt="">
+                            <img src="./assets/icon4 (2).png" class="img-fluid icon" alt="">
+                            <img src="./assets/icon4 (3).png" class="img-fluid icon" alt="">
+                            <img src="./assets/icon4 (4).png" class="img-fluid icon" alt="">
 
                         </div>
 
@@ -379,16 +384,16 @@
 
 
     </footer>
+    <!-- Footer END -->
 
 
 
 
-
-    <!-- ================= OFFCANVAS ================= -->
+    <!-- ================= OFFCANVAS START ================= -->
     <div class="offcanvas offcanvas-start left-canvas" data-bs-scroll="true" data-bs-backdrop="true" tabindex="0"
         id="offcanvasScrolling">
         <div class="offcanvas-header d-flex align-items-center justify-content-between">
-            <img src="/assets/Soul-logo.gif" class="logo-img" alt="">
+            <img src="./assets/Soul-logo.gif" class="logo-img" alt="">
             <a href="#" class=" border-btn">Login/sign-up</a>
         </div>
         <div class="offcanvas-body p-0">
@@ -426,36 +431,36 @@
                     <!-- owl carousel start men -->
                     <div class="owl-carousel owl-theme px-3">
                         <div class="item">
-                            <img src="/assets/men-icon-1.png" class="img-fluid rounded" alt="">
+                            <img src="./assets/men-icon-1.png" class="img-fluid rounded" alt="">
                             <p class="text-muted text-center">New Arrivals</p>
                         </div>
                         <div class="item">
-                            <img src="/assets/men-icon-2.png" class="img-fluid rounded" alt="">
-                            <p class="text-muted text-center fs-6">Hot Merch</p>
+                            <img src="./assets/men-icon-2.png" class="img-fluid rounded" alt="">
+                            <p class="text-muted text-center ">Hot Merch</p>
                         </div>
                         <div class="item">
-                            <img src="/assets/men-icon-3.png" class="img-fluid rounded" alt="">
-                            <p class="text-muted text-center fs-6">Anime</p>
+                            <img src="./assets/men-icon-3.png" class="img-fluid rounded" alt="">
+                            <p class="text-muted text-center ">Anime</p>
                         </div>
                         <div class="item">
-                            <img src="/assets/men-icon-4.png" class="img-fluid rounded" alt="">
-                            <p class="text-muted text-center fs-6">Harry Porter</p>
+                            <img src="./assets/men-icon-4.png" class="img-fluid rounded" alt="">
+                            <p class="text-muted text-center ">Harry Porter</p>
                         </div>
                         <div class="item">
-                            <img src="/assets/men-icon-5.png" class="img-fluid rounded" alt="">
-                            <p class="text-muted text-center fs-6">Marvel</p>
+                            <img src="./assets/men-icon-5.png" class="img-fluid rounded" alt="">
+                            <p class="text-muted text-center ">Marvel</p>
                         </div>
                         <div class="item">
-                            <img src="/assets/men-icon-6.png" class="img-fluid rounded" alt="">
-                            <p class="text-muted text-center fs-6">Culture code</p>
+                            <img src="./assets/men-icon-6.png" class="img-fluid rounded" alt="">
+                            <p class="text-muted text-center ">Culture code</p>
                         </div>
                         <div class="item">
-                            <img src="/assets/men-icon-7.png" class="img-fluid rounded" alt="">
-                            <p class="text-muted text-center fs-6">Cult Callsics</p>
+                            <img src="./assets/men-icon-7.png" class="img-fluid rounded" alt="">
+                            <p class="text-muted text-center ">Cult Callsics</p>
                         </div>
                         <div class="item">
-                            <img src="/assets/men-icon-8.png" class="img-fluid rounded" alt="">
-                            <p class="text-muted text-center fs-6">Kids-wear</p>
+                            <img src="./assets/men-icon-8.png" class="img-fluid rounded" alt="">
+                            <p class="text-muted text-center ">Kids-wear</p>
                         </div>
                     </div>
                     <!-- owl crosel end -->
@@ -494,46 +499,46 @@
                                                     <div class="row row-cols-2 row-cols-sm-3 row-cols-md-5 ">
 
                                                         <div class="col text-center">
-                                                            <img src="/assets/shop nested icon 1.png"
+                                                            <img src="./assets/shop nested icon 1.png"
                                                                 class="img-fluid rounded" alt="">
                                                             <h5 class="fs-6 mt-2">Shirts</h5>
                                                         </div>
 
                                                         <div class="col text-center">
-                                                            <img src="/assets/shop nested icon 1.png"
+                                                            <img src="./assets/shop nested icon 1.png"
                                                                 class="img-fluid rounded" alt="">
                                                             <h5 class="fs-6 mt-2">T-Shirts</h5>
                                                         </div>
 
                                                         <div class="col text-center">
-                                                            <img src="/assets/shop nested icon 1.png"
+                                                            <img src="./assets/shop nested icon 1.png"
                                                                 class="img-fluid rounded" alt="">
                                                             <h5 class="fs-6 mt-2">Hoodies</h5>
                                                         </div>
 
                                                         <div class="col text-center">
-                                                            <img src="/assets/shop nested icon 1.png"
+                                                            <img src="./assets/shop nested icon 1.png"
                                                                 class="img-fluid rounded" alt="">
                                                             <h5 class="fs-6 mt-2">Jackets</h5>
                                                         </div>
 
                                                         <div class="col text-center">
-                                                            <img src="/assets/shop nested icon 1.png"
+                                                            <img src="./assets/shop nested icon 1.png"
                                                                 class="img-fluid rounded" alt="">
                                                             <h5 class="fs-6 mt-2">Sweatshirts</h5>
                                                         </div>
                                                         <div class="col text-center">
-                                                            <img src="/assets/shop nested icon 1.png"
+                                                            <img src="./assets/shop nested icon 1.png"
                                                                 class="img-fluid rounded" alt="">
                                                             <h5 class="fs-6 mt-2">Sweatshirts</h5>
                                                         </div>
                                                         <div class="col text-center">
-                                                            <img src="/assets/shop nested icon 1.png"
+                                                            <img src="./assets/shop nested icon 1.png"
                                                                 class="img-fluid rounded" alt="">
                                                             <h5 class="fs-6 mt-2">Sweatshirts</h5>
                                                         </div>
                                                         <div class="col text-center">
-                                                            <img src="/assets/shop nested icon 1.png"
+                                                            <img src="./assets/shop nested icon 1.png"
                                                                 class="img-fluid rounded" alt="">
                                                             <h5 class="fs-6 mt-2">Sweatshirts</h5>
                                                         </div>
@@ -585,7 +590,7 @@
                                                 <div class="accordion-body">
                                                     <div class="row">
                                                         <div class="col-md-2">
-                                                            <img src="/assets/men-icon-2.png" class="img-fluid rounded"
+                                                            <img src="./assets/men-icon-2.png" class="img-fluid rounded"
                                                                 alt="">
                                                             <p class="text-center text-muted">
                                                                 T-shirts
@@ -612,7 +617,7 @@
                                                 <div class="accordion-body">
                                                     <div class="row">
                                                         <div class="col-md-3">
-                                                            <img src="/assets/men-icon-4.png" class="img-fluid rounded"
+                                                            <img src="./assets/men-icon-4.png" class="img-fluid rounded"
                                                                 alt="">
                                                             <p class="text-center text-muted">
                                                                 Oversized T-shirts
@@ -662,7 +667,7 @@
                                                 <div class="accordion-body">
                                                     <div class="row">
                                                         <div class="col-md-3">
-                                                            <img src="/assets/men-icon-7.png" class="img-fluid rounded"
+                                                            <img src="./assets/men-icon-7.png" class="img-fluid rounded"
                                                                 alt="">
                                                             <p class="text-center">
                                                                 All Bottomwear
@@ -695,35 +700,35 @@
                                         <!-- all accssesories owl carosel start -->
                                         <div class="owl-carousel owl-theme All-accessories-carousel px-2">
                                             <div class="item">
-                                                <img src="/assets/men-icon-2.png" class="img-fluid rounded" alt="">
+                                                <img src="./assets/men-icon-2.png" class="img-fluid rounded" alt="">
                                                 <p class="text-center">Hello</p>
                                             </div>
                                             <div class="item">
-                                                <img src="/assets/men-icon-2.png" class="img-fluid rounded" alt="">
+                                                <img src="./assets/men-icon-2.png" class="img-fluid rounded" alt="">
                                                 <p class="text-center">Hello</p>
                                             </div>
                                             <div class="item">
-                                                <img src="/assets/men-icon-2.png" class="img-fluid rounded" alt="">
+                                                <img src="./assets/men-icon-2.png" class="img-fluid rounded" alt="">
                                                 <p class="text-center">Hello</p>
                                             </div>
                                             <div class="item">
-                                                <img src="/assets/men-icon-2.png" class="img-fluid rounded" alt="">
+                                                <img src="./assets/men-icon-2.png" class="img-fluid rounded" alt="">
                                                 <p class="text-center">Hello</p>
                                             </div>
                                             <div class="item">
-                                                <img src="/assets/men-icon-2.png" class="img-fluid rounded" alt="">
+                                                <img src="./assets/men-icon-2.png" class="img-fluid rounded" alt="">
                                                 <p class="text-center">Hello</p>
                                             </div>
                                             <div class="item">
-                                                <img src="/assets/men-icon-2.png" class="img-fluid rounded" alt="">
+                                                <img src="./assets/men-icon-2.png" class="img-fluid rounded" alt="">
                                                 <p class="text-center">Hello</p>
                                             </div>
                                             <div class="item">
-                                                <img src="/assets/men-icon-2.png" class="img-fluid rounded" alt="">
+                                                <img src="./assets/men-icon-2.png" class="img-fluid rounded" alt="">
                                                 <p class="text-center">Hello</p>
                                             </div>
                                             <div class="item">
-                                                <img src="/assets/men-icon-2.png" class="img-fluid rounded" alt="">
+                                                <img src="./assets/men-icon-2.png" class="img-fluid rounded" alt="">
                                                 <p class="text-center">Hello</p>
                                             </div>
                                         </div>
@@ -810,7 +815,7 @@
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#sneakersCollapse" aria-expanded="false"
                                         aria-controls="sneakersCollapse">
-                                        Sneakers <sup class="fs-6 text-danger">New Drops</sup>
+                                        Sneakers <span class="fs-6 text-danger">New Drops</span>
                                     </button>
                                 </h2>
                                 <div id="sneakersCollapse" class="accordion-collapse collapse"
@@ -834,7 +839,7 @@
                                     <div class="accordion-body">
                                         <div class="row">
                                             <label for="#">Shop Now</label>
-                                            <div class="col-md-3"><img src="/assets/Soul-logo.gif" alt="">
+                                            <div class="col-md-3"><img src="./assets/Soul-logo.gif" alt="">
                                                 <p class="text-center"></p>
                                             </div>
                                         </div>
@@ -851,22 +856,22 @@
                     tabindex="0">
                     <div class="owl-carousel owl-theme crousel-cards px-3">
                         <div class="item"> <img src="assets/women-icon-1.png" alt="">
-                            <h4 class="text-dark fw-bold">Harry-porter</h4>
+                            <p class="text-dark fw-bold mb-0">Harry-porter</p>
                         </div>
                         <div class="item"> <img src="assets/women-icon-2.png" alt="">
-                            <h4 class="text-dark fw-bold">Kawaii</h4>
+                            <p class="text-dark fw-bold mb-0">Kawaii</p>
                         </div>
                         <div class="item"> <img src="assets/women-icon-3.png" alt="">
-                            <h4 class="text-dark fw-bold">Oversized Tees</h4>
+                            <p class="text-dark fw-bold mb-0">Oversized Tees</p>
                         </div>
                         <div class="item"> <img src="assets/women-icon-4.png" alt="">
-                            <h4 class="text-dark fw-bold">New Arrivals</h4>
+                            <p class="text-dark fw-bold mb-0">New Arrivals</p>
                         </div>
                         <div class="item"> <img src="assets/women-icon-5.png" alt="">
-                            <h4 class="text-dark fw-bold">Cotton Linen</h4>
+                            <p class="text-dark fw-bold mb-0">Cotton Linen</p>
                         </div>
                         <div class="item"> <img src="assets/women-icon-6.png" alt="">
-                            <h4 class="text-dark fw-bold">Souled</h4>
+                            <p class="text-dark fw-bold mb-0">Souled</p>
                         </div>
                     </div>
                 </div>
@@ -874,28 +879,29 @@
                     tabindex="0">
                     <div class="owl-carousel owl-theme crousel-cards px-3">
                         <div class="item"> <img src="assets/sneaker-icon-1.png" alt="">
-                            <h4 class="text-dark fw-bold">Kanso V2</h4>
+                            <p class="text-dark fw-bold">Kanso V2</p>
                         </div>
                         <div class="item"> <img src="assets/sneaker-icon-2.png" alt="">
-                            <h4 class="text-dark fw-bold">UBZ Ascend</h4>
+                            <p class="text-dark fw-bold mb-0 ">UBZ Ascend</p>
                         </div>
                         <div class="item"> <img src="assets/sneaker-icon-3.png" alt="">
-                            <h4 class="text-dark fw-bold">Raptors</h4>
+                            <p class="text-dark fw-bold">Raptors</p>
                         </div>
                         <div class="item"> <img src="assets/sneaker-icon-4.png" alt="">
-                            <h4 class="text-dark fw-bold">New kakashi</h4>
+                            <p class="text-dark fw-bold ">New kakashi</p>
                         </div>
                         <div class="item"> <img src="assets/sneaker-icon-5.png" alt="">
-                            <h4 class="text-dark fw-bold">UBZ NXT</h4>
+                            <p class="text-dark fw-bold">UBZ NXT</p>
                         </div>
                         <div class="item"> <img src="assets/sneaker-icon-6.png" alt="">
-                            <h4 class="text-dark fw-bold">Football Shoe</h4>
+                            <p class="text-dark fw-bold mb-0">Football Shoe</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- ================= OFFCANVAS END ================= -->
 
     <!-- bootstrap js link  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
