@@ -9,15 +9,15 @@
     .input-group{
         display: none;
     }
+    .cart-div{
+        max-width: 100% !important;
+        
+    }
     
 
 }
 
 /* login page responsive */
-
-/* ============================= */
-/* RESPONSIVE DESIGN */
-/* ============================= */
 
 /* Tablets */
 @media (max-width: 992px) {
@@ -59,25 +59,11 @@
     }
 }
 
-/* Small Mobile */
-@media (max-width: 480px) {
 
-    .login-container {
-        max-width: 100%;
-        border-radius: 0;
-    }
 
-    .log-content {
-        margin-left: 0;
-        margin-right: 0;
-    }
+/*  Empty Card MObile Responsive */
 
-    .social-log {
-        max-width: 18px;
-    }
+@media screen and (max-width="576px") {
 
-    .google-text {
-        font-size: 14px;
-    }
-    
+   
 }
